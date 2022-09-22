@@ -70,7 +70,7 @@ footer {
   img{
     position: absolute;
     top: -80px;
-    right: -60px;
+    right: 8%;
     transform: scale(1.1);
   }
 
@@ -98,6 +98,10 @@ footer {
                 color: #848485;
                 font-size: 0.9rem;
                 line-height: 1.3rem;
+
+                &:hover{
+                    color: #fff;
+                }
             }
         }
     }

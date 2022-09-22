@@ -12,6 +12,7 @@
 
       <footer>
         <FooterComponentFirstArea />
+        <FooterComponentSecondArea />
       </footer>
     </div>
 
@@ -22,6 +23,7 @@ import HeaderArea from "./components/HeaderArea.vue";
 import MainComponentFirstArea from "./components/MainComponentFirstArea.vue";
 import MainComponentSecondArea from "./components/MainComponentSecondArea.vue";
 import FooterComponentFirstArea from "./components/FooterComponentFirstArea.vue";
+import FooterComponentSecondArea from "./components/FooterComponentSecondArea.vue";
 
 export default {
   name: "App",
@@ -29,7 +31,8 @@ export default {
     HeaderArea,
     MainComponentFirstArea,
     MainComponentSecondArea,
-    FooterComponentFirstArea
+    FooterComponentFirstArea,
+    FooterComponentSecondArea
   },
 };
 </script>
