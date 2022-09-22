@@ -11,7 +11,7 @@
       </main>
 
       <footer>
-
+        <FooterComponentFirstArea />
       </footer>
     </div>
 
@@ -21,13 +21,15 @@
 import HeaderArea from "./components/HeaderArea.vue";
 import MainComponentFirstArea from "./components/MainComponentFirstArea.vue";
 import MainComponentSecondArea from "./components/MainComponentSecondArea.vue";
+import FooterComponentFirstArea from "./components/FooterComponentFirstArea.vue";
 
 export default {
   name: "App",
   components: {
     HeaderArea,
     MainComponentFirstArea,
-    MainComponentSecondArea
+    MainComponentSecondArea,
+    FooterComponentFirstArea
   },
 };
 </script>
