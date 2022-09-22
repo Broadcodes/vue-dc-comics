@@ -12,6 +12,7 @@ export default {
 
 <style lang="scss" scoped>
 .containerArea{
+    margin-top: 7px;
     background-color: #1c1c1c;
     h2{
         color: #fff;

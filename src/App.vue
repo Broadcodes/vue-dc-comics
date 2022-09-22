@@ -7,6 +7,7 @@
 
       <main>
         <MainComponentFirstArea />
+        <MainComponentSecondArea />
       </main>
 
       <footer>
@@ -19,12 +20,14 @@
 <script>
 import HeaderArea from "./components/HeaderArea.vue";
 import MainComponentFirstArea from "./components/MainComponentFirstArea.vue";
+import MainComponentSecondArea from "./components/MainComponentSecondArea.vue";
 
 export default {
   name: "App",
   components: {
     HeaderArea,
-    MainComponentFirstArea
+    MainComponentFirstArea,
+    MainComponentSecondArea
   },
 };
 </script>

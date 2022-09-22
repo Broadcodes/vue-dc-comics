@@ -31,6 +31,7 @@ header {
   justify-content: space-between;
   align-content: center;
   padding: 0px 8%;
+  margin-top: 7px;
 
   img {
     width: 130px;
