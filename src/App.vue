@@ -1,36 +1,42 @@
 <template>
   <div id="app">
-    <header>
 
-    </header>
+      <header>
+        <HeaderArea />
+      </header>
 
-    <main>
+      <main>
 
-    </main>
+      </main>
 
-    <footer>
-      
-    </footer>
-  </div>
+      <footer>
+
+      </footer>
+    </div>
+
 </template>
 
 <script>
+import HeaderArea from "./components/HeaderArea.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-
-  }
-}
+    HeaderArea,
+  },
+};
 </script>
 
 <style lang="scss">
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
