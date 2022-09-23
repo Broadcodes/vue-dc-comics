@@ -1,22 +1,25 @@
 <template>
   <div class="containerArea">
-    <h2>--&gt; Content goes here &lt;--</h2>
+    <div class="card" v-for="(card, index) in cards" :key="card[index]">
+      <img class="imageCard" :src="card.thumb" :alt="card.series">
+      <h3>{{card.series}}</h3>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-    name: "MainComponentFirstArea"
-}
+  name: "MainComponentFirstArea",
+  props: ["cards"]
+};
 </script>
 
 <style lang="scss" scoped>
-.containerArea{
-    margin-top: 7px;
-    background-color: #1c1c1c;
-    h2{
-        color: #fff;
-        padding: 60px 9.5%;
-    }
+.containerArea {
+  background-color: #1c1c1c;
+  h2 {
+    color: #fff;
+    padding: 60px 9.5%;
+  }
 }
 </style>

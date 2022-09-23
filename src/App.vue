@@ -2,10 +2,11 @@
   <div id="app">
       <header>
         <HeaderArea />
+        <JumbotronHeader />
       </header>
 
       <main>
-        <MainComponentFirstArea />
+        <MainComponentFirstArea :cards="cardsComics"/>
         <MainComponentSecondArea />
       </main>
 
@@ -23,6 +24,9 @@ import MainComponentFirstArea from "./components/MainComponentFirstArea.vue";
 import MainComponentSecondArea from "./components/MainComponentSecondArea.vue";
 import FooterComponentFirstArea from "./components/FooterComponentFirstArea.vue";
 import FooterComponentSecondArea from "./components/FooterComponentSecondArea.vue";
+import JumbotronHeader from "./components/JumbotronHeader.vue";
+
+import {cardsComics} from "./data/dc_comics";
 
 export default {
   name: "App",
@@ -31,8 +35,14 @@ export default {
     MainComponentFirstArea,
     MainComponentSecondArea,
     FooterComponentFirstArea,
-    FooterComponentSecondArea
-  },
+    FooterComponentSecondArea,
+    JumbotronHeader
+},
+  data(){
+    return {
+      cardsComics
+    }
+  }
 };
 </script>
 
