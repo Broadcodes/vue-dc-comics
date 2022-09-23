@@ -5,44 +5,23 @@
         <div class="col-1">
             <h2>DC COMICS</h2>
             <ul>
-                <li><a href="#">Characters</a></li>
-                <li><a href="#">Comics</a></li>
-                <li><a href="#">Movies</a></li>
-                <li><a href="#">TV</a></li>
-                <li><a href="#">Games</a></li>
-                <li><a href="#">Videos</a></li>
-                <li><a href="#">News</a></li>
+                <li v-for="menu_1_A in col_1_A" :key="menu_1_A.textLink"><a :href="menu_1_A.link">{{menu_1_A.textLink}}</a></li>
             </ul>
             <h2>SHOP</h2>
             <ul>
-                <li><a href="#">Shop DC</a></li>
-                <li><a href="#">Shop DC Collectibles</a></li>
+                <li v-for="menu_1_B in col_1_B" :key="menu_1_B.textLink"><a :href="menu_1_B.link">{{menu_1_B.textLink}}</a></li>
             </ul>
         </div>
         <div class="col-2">
             <h2>DC</h2>
             <ul>
-                <li><a href="#">Terms Of Use</a></li>
-                <li><a href="#">Privacy policy (New)</a></li>
-                <li><a href="#">Ad Choices</a></li>
-                <li><a href="#">Advertising</a></li>
-                <li><a href="#">Jobs</a></li>
-                <li><a href="#">Subscriptions</a></li>
-                <li><a href="#">Talent Workshops</a></li>
-                <li><a href="#">CPSC Certificates</a></li>
-                <li><a href="#">Ratings</a></li>
-                <li><a href="#">Shop Help</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li v-for="menu_2 in col_2" :key="menu_2.textLink"><a :href="menu_2.link">{{menu_2.textLink}}</a></li>
             </ul>
         </div>
         <div class="col-3">
             <h2>SITES</h2>
             <ul>
-                <li><a href="#">DC</a></li>
-                <li><a href="#">MAD Magazine</a></li>
-                <li><a href="#">DC Kids</a></li>
-                <li><a href="#">DC Universe</a></li>
-                <li><a href="#">DC Pawer Visa</a></li>
+                <li v-for="menu_3 in col_3" :key="menu_3.textLink"><a :href="menu_3.link">{{menu_3.textLink}}</a></li>
             </ul>
         </div>
     </div>
@@ -52,6 +31,118 @@
 <script>
 export default {
   name: "FooterComponentFirstArea",
+  data(){
+    return {
+        col_1_A:[
+            {
+                textLink: 'Characters',
+                link: '#'
+            },
+            {
+                textLink: 'Comics',
+                link: '#'
+            },
+            {
+                textLink: 'Movies',
+                link: '#'
+            },
+            {
+                textLink: 'TV',
+                link: '#'
+            },
+            {
+                textLink: 'Games',
+                link: '#'
+            },
+            {
+                textLink: 'Videos',
+                link: '#'
+            },
+            {
+                textLink: 'News',
+                link: '#'
+            },
+        ],
+        col_1_B:[
+            {
+                textLink: 'Shop DC',
+                link: '#'
+            },
+            {
+                textLink: 'Shop DC Collectibles',
+                link: '#'
+            }
+        ],
+        col_2:[
+            {
+                textLink: 'Terms Of Use',
+                link: '#'
+            },
+            {
+                textLink: 'Privacy policy (New)',
+                link: '#'
+            },
+            {
+                textLink: 'Ad Choices',
+                link: '#'
+            },
+            {
+                textLink: 'Advertising',
+                link: '#'
+            },
+            {
+                textLink: 'Jobs',
+                link: '#'
+            },
+            {
+                textLink: 'Subscriptions',
+                link: '#'
+            },
+            {
+                textLink: 'Talent Workshops',
+                link: '#'
+            },
+            {
+                textLink: 'CPSC Certificates',
+                link: '#'
+            },
+            {
+                textLink: 'Ratings',
+                link: '#'
+            },
+            {
+                textLink: 'Shop Help',
+                link: '#'
+            },
+            {
+                textLink: 'Contact Us',
+                link: '#'
+            },
+        ],
+        col_3:[
+            {
+                textLink: 'DC',
+                link: '#'
+            },
+            {
+                textLink: 'MAD Magazine',
+                link: '#'
+            },
+            {
+                textLink: 'DC Kids',
+                link: '#'
+            },
+            {
+                textLink: 'DC Universe',
+                link: '#'
+            },
+            {
+                textLink: 'DC Pawer Visa',
+                link: '#'
+            }
+        ]
+    }
+  }
 };
 </script>
 

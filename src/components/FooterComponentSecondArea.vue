@@ -3,11 +3,7 @@
     <input type="button" value="SIGN-UP NOW!" />
     <div class="containerSocial">
       <h2>FOLLOW US</h2>
-      <img src="img/footer-facebook.png" alt="" />
-      <img src="img/footer-twitter.png" alt="" />
-      <img src="img/footer-youtube.png" alt="" />
-      <img src="img/footer-pinterest.png" alt="" />
-      <img src="img/footer-periscope.png" alt="" />
+      <img v-for="image in imageSocial" :key="image.alt" :src="image.link" :alt="image.alt" />
     </div>
   </footer>
 </template>
@@ -15,6 +11,32 @@
 <script>
 export default {
   name: "FooterComponentSecondArea",
+  data() {
+    return {
+      imageSocial: [
+        {
+          link: "img/footer-facebook.png",
+          alt: "facebook",
+        },
+        {
+          link: "img/footer-twitter.png",
+          alt: "twitter",
+        },
+        {
+          link: "img/footer-youtube.png",
+          alt: "youtube",
+        },
+        {
+          link: "img/footer-pinterest.png",
+          alt: "pinterest",
+        },
+        {
+          link: "img/footer-periscope.png",
+          alt: "periscope",
+        },
+      ],
+    };
+  },
 };
 </script>
 
@@ -31,8 +53,8 @@ footer {
     color: #fff;
     border: 2px solid #047dee;
 
-    &:hover{
-        background-color: #047dee58;
+    &:hover {
+      background-color: #047dee58;
     }
   }
 
