@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <img src="../assets/img/dc-logo-bg.png" alt="Logo Footer">
+    <img src="img/dc-logo-bg.png" alt="Logo Footer">
     <div class="navigationFooter">
         <div class="col-1">
             <h2>DC COMICS</h2>
@@ -61,7 +61,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-content: center;
-  background-image: url("../assets/img/footer-bg.jpg");
+  background-image: url("../../public/img/footer-bg.jpg");
   background-size: 120%;
   padding: 40px 8% 70px;
   position: relative;

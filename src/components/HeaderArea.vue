@@ -1,18 +1,15 @@
 <template>
   <header>
-    <img src="../assets/img/dc-logo.png" alt="Logo DC" />
+    <img src="img/dc-logo.png" alt="Logo DC" />
     <div class="navigation">
       <ul>
-        <li><a href="#">CHARACTERS</a></li>
-        <li><a href="#">COMICS</a></li>
-        <li><a href="#">MOVIES</a></li>
-        <li><a href="#">TV</a></li>
-        <li><a href="#">GAMES</a></li>
-        <li><a href="#">COLLECTIBLES</a></li>
-        <li><a href="#">VIDEOS</a></li>
-        <li><a href="#">FANS</a></li>
-        <li><a href="#">NEWS</a></li>
-        <li><a href="#">SHOP</a></li>
+        <li
+          v-for="item in menu"
+          :key="item.name"
+          :class="{ active: item.active }"
+        >
+          <a :href="item.link">{{ item.name }}</a>
+        </li>
       </ul>
     </div>
   </header>
@@ -21,6 +18,62 @@
 <script>
 export default {
   name: "HeaderArea",
+  data() {
+    return {
+      menu: [
+        {
+          name: "CHARACTERS",
+          link: "characters",
+          active: false,
+        },
+        {
+          name: "COMICS",
+          link: "comics",
+          active: true,
+        },
+        {
+          name: "MOVIES",
+          link: "movies",
+          active: false,
+        },
+        {
+          name: "TV",
+          link: "tv",
+          active: false,
+        },
+        {
+          name: "GAMES",
+          link: "games",
+          active: false,
+        },
+        {
+          name: "COLLECTIBLES",
+          link: "collectibles",
+          active: false,
+        },
+        {
+          name: "VIDEOS",
+          link: "videos",
+          active: false,
+        },
+        {
+          name: "FANS",
+          link: "fans",
+          active: false,
+        },
+        {
+          name: "NEWS",
+          link: "news",
+          active: false,
+        },
+        {
+          name: "SHOP",
+          link: "shop",
+          active: false,
+        },
+      ],
+    };
+  },
 };
 </script>
 
@@ -38,34 +91,35 @@ header {
     height: 130px;
     padding: 20px;
   }
-  .navigation{
+  .navigation {
     flex-grow: 1;
     display: flex;
-    justify-content: end;
-    
-    ul{
+    justify-content: flex-end;
+
+    ul {
+      display: flex;
+      list-style-type: none;
+
+      li {
         display: flex;
-        list-style-type: none;
-        
-        li{
-            display: flex;
-            align-items: center;
-            height: 100%;
-            margin: 0 17px;
-            font-size: 0.9rem;
+        align-items: center;
+        height: 100%;
+        margin: 0 17px;
+        font-size: 0.9rem;
 
-        &:hover{
-            height: calc(100% + 7px);
-            border-bottom: 7px solid #0282f9;
+        &.active,
+        &:hover {
+          height: calc(100% + 7px);
+          border-bottom: 7px solid #0282f9;
         }
 
-            a{
-                text-decoration: none;
-                color: #000;
-                font-weight: bold;
-                cursor: pointer;
-            }
+        a {
+          text-decoration: none;
+          color: #000;
+          font-weight: bold;
+          cursor: pointer;
         }
+      }
     }
   }
 }

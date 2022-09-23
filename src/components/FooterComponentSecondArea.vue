@@ -3,11 +3,11 @@
     <input type="button" value="SIGN-UP NOW!" />
     <div class="containerSocial">
       <h2>FOLLOW US</h2>
-      <img src="../assets/img/footer-facebook.png" alt="" />
-      <img src="../assets/img/footer-twitter.png" alt="" />
-      <img src="../assets/img/footer-youtube.png" alt="" />
-      <img src="../assets/img/footer-pinterest.png" alt="" />
-      <img src="../assets/img/footer-periscope.png" alt="" />
+      <img src="img/footer-facebook.png" alt="" />
+      <img src="img/footer-twitter.png" alt="" />
+      <img src="img/footer-youtube.png" alt="" />
+      <img src="img/footer-pinterest.png" alt="" />
+      <img src="img/footer-periscope.png" alt="" />
     </div>
   </footer>
 </template>
